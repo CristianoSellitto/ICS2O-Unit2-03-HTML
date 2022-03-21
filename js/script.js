@@ -1,11 +1,17 @@
 // Cristiano
-// ICS2O-Unit0-00-HTML
-// Date 2022
+// ICS2O-Unit2-03-HTML
+// March 21 2022
 
 
 /**
- * Alerts "Hello, World!"
+ * Prints a name and an age.
  */
 function onButtonClick() {
-  alert("Hello, World!")
+  const firstname = document.getElementById("first-name").value
+  const age = parseInt(document.getElementById("age").value)
+  if (age == 1) {
+    document.getElementById("output").innerHTML = "<p>Your first name is " + firstname + " and you are " + age + " year old.</p>"
+  } else {
+    document.getElementById("output").innerHTML = "<p>Your first name is " + firstname + " and you are " + age + " years old.</p>"
+  }
 }
